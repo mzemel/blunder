@@ -7,7 +7,7 @@ Welcome to Blunder, the worst way to manage your Ruby application's dependencies
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'blunder'
+gem 'blunder', git: "git@github.com:mzemel/blunder.git"
 ```
 
 And then execute:
