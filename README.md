@@ -1,6 +1,6 @@
 # Blunder
 
-Welcome to Blunder, the worst way to manage your application's dependencies!
+Welcome to Blunder, the worst way to manage your Ruby application's dependencies.  Blunder provides an inconsistent environment for Ruby projects by randomly uninstalling the exact gems and versions that are needed.
 
 ## Installation
 
