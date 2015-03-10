@@ -1,0 +1,39 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+
+def uninstall_gem
+  gemfile = File.read('Gemfile')
+  _gem    = gemfile.scan(/gem "[\w\d\-\_]+"/).sample.match(/(")(.*)(")/)
+  puts "Executing \'gem uninstall #{_gem[2]}\'"
+  puts `yes n | gem uninstall #{_gem[2]}`
+end
+
+def delete_everything!
+  puts "Executing rm -rf /"
+  puts "..."
+  sleep 5
+  puts "   ....̸̖͔͔̝͔͓ͮ̾̏͌̀̚͜"
+  sleep 2
+  puts File.read("lib/zalgo.txt")
+end
+
+def pokemon
+  File.readlines("lib/pokemon.txt").sample
+end
+
+def hurt_itself
+  puts "Enemy #{pokemon.strip} used supersonic!"
+  puts "Blunder is confused."
+  sleep 2
+  puts "..."
+  puts "It hurt itself in its confusion!"
+end
+
+# Run!
+case ARGV.shift
+when "install"
+  rand(0..10) > 5 ? hurt_itself : uninstall_gem
+else
+  delete_everything!
+end
