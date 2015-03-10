@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require "blunder"
 
 def uninstall_gem
   gemfile = File.read('Gemfile')
