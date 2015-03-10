@@ -16,10 +16,13 @@ And then execute:
 
 ## Usage
 
-Use Blunder with 
+Use Blunder with
 
     $ bin/blunder install
-    
+
 Or try another command!
 
     $ bin/blunder clean
+
+![](http://i.imgur.com/79Lp33i.png)
+
